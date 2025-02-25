@@ -71,7 +71,7 @@ Appointment Confirmation
             <div>
                 
  
-                    <h4 class="w3ls_head">Thank you for applying. Your Appointment no is <?php echo $_SESSION['aptno'];?> </h4>
+                    <h4 class="w3ls_head">Thank you so for applying. Your Appointment no is <?php echo $_SESSION['aptno'];?> </h4>
                     
        
     </div>
