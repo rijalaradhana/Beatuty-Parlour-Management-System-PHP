@@ -42,7 +42,7 @@ $(function () {
         <div class="banner-text">
           <h4>Creative Styling</h4>
           <h3>beauty salon<br>
-            fashion for woman</h3>
+            fashion for all women</h3>
 
             <a href="book-appointment.php" class="btn logo-button top-margin">Get An Appointment</a>
         </div>
