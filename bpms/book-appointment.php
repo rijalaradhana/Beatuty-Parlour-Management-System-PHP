@@ -149,7 +149,7 @@ while ($row=mysqli_fetch_array($ret)) {
 
                         <div style="padding-top: 30px;">
                         <textarea class="form-control" id="message" name="message" placeholder="Message" required=""></textarea></div>
-                        <button type="submit" class="btn btn-contact" name="submit">Make an Appointmen</button>
+                        <button type="submit" class="btn btn-contact" name="submit">Make an Appointment</button>
                     </form>
                 </div>
     </div>
