@@ -105,7 +105,10 @@ move_uploaded_file($_FILES["image"]["tmp_name"],"images/".$newimage);
 							 <div class="form-group"> <label for="exampleInputEmail1">Service Description</label> <textarea type="text" class="form-control" id="sername" name="serdesc" placeholder="Service Name" value="" required="true"></textarea> </div>
 							  <div class="form-group"> <label for="exampleInputPassword1">Cost</label> <input type="text" id="cost" name="cost" class="form-control" placeholder="Cost" value="" required="true"> </div>
 							<div class="form-group"> <label for="exampleInputEmail1">Images</label> <input type="file" class="form-control" id="image" name="image" value="" required="true"> </div>
-							  <button type="submit" name="submit" class="btn btn-default">Add</button> </form> 
+							  <button type="submit" name="submit" class="btn btn-default">Add</button>
+
+							 </form> 
+							 
 						</div>
 						
 					</div>
