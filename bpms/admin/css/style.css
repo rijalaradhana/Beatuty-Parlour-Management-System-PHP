@@ -84,7 +84,7 @@ button#showLeftPush {
 	outline:none;
 }
 button#showLeftPush:hover {
-    color:#4F52BA;
+    color: #FFC0CB;
 }
 /*--push-menu-css--*/
 .cbp-spmenu {
@@ -95,7 +95,7 @@ button#showLeftPush:hover {
     height: 100%;
     top: 76px;
     z-index: 1000;
-    background-color:#4F52BA;
+    background-color:#FFC0CB;
 	padding: 2em 0;
 }
 .cbp-spmenu-left {
@@ -210,7 +210,7 @@ ul.dropdown-menu{
 /*--//side-menu--*/
 /* ----Logo----*/
 .logo {
-    background:#4F52BA;
+    background: #FFC0CB;
     text-align: center;
     float: left;
 }
@@ -248,7 +248,7 @@ ul.dropdown-menu{
     margin: 0;
     z-index: 10;
     font-size: 0.9em;
-    color:#4F52BA;
+    color: #FFC0CB;
     padding: 0.5em 1em;
 	border: 2px solid rgba(79, 82, 186, 0.3);
 	-webkit-appearance: none; /* for box shadows to show on iOS */
@@ -258,13 +258,13 @@ ul.dropdown-menu{
 	color:#FFC0CB;
 }
 .sb-search-input:-moz-placeholder {
-	color:#4F52BA;
+	color: #FFC0CB;
 }
 .sb-search-input::-moz-placeholder {
-	color:#4F52BA;
+	color: #FFC0CB;
 }
 .sb-search-input:-ms-input-placeholder {
-	color:#4F52BA;
+	color: #FFC0CB;
 }
 .input__label {
 	-webkit-font-smoothing: antialiased;
@@ -1604,7 +1604,7 @@ button.note-color-btn {
     outline: none;
     cursor: pointer;
     color: #fff;
-    background:#4F52BA;
+    background: #FFC0CB;
     width: 100%;
     padding: .5em 1em;
     font-size: 1em;
@@ -1741,7 +1741,7 @@ p.creating {
     outline: none;
     cursor: pointer;
     color: #fff;
-    background:#4F52BA;
+    background: #FFC0CB;
     width: 23%;
     padding: .5em 1em;
     font-size: 1em;
@@ -2108,7 +2108,7 @@ h4.modal-title {
 .compose-right .alert.alert-info {
     padding: 10px 20px;
     font-size: 0.9em;
-    color:#4F52BA;
+    color: #FFC0CB;
 	background-color: rgba(212, 213, 243, 0.98);
     border-color: rgba(151, 153, 230, 0.41);
 	border-radius: inherit;
@@ -2142,7 +2142,7 @@ h4.modal-title {
 }
 .compose-right input[type="submit"] {
     font-size: 0.9em;
-    background-color:#4F52BA;
+    background-color: #FFC0CB;
     border: 1px solid #4F52BA;
     color: #fff;
     padding: 0.4em 1em;
@@ -2156,7 +2156,7 @@ h4.modal-title {
 	width: 32%;
 }
 .profile-top {
-    background-color:#4F52BA;
+    background-color: #FFC0CB;
     text-align: center;
 	padding: 1.5em;
 }
@@ -2194,8 +2194,8 @@ h4.title3 {
     width: 85%;
 }
 .row-middle .profile-right {
-    border-top: 1px dotted#4F52BA;
-    border-bottom: 1px dotted#4F52BA;
+    border-top: 1px dotted #FFC0CB;
+    border-bottom: 1px dotted #FFC0CB;
     padding: 1em 0;
 }
 .profile-row .profile-icon {
@@ -2235,7 +2235,7 @@ i.fa.fa-facebook.profile-icon {
 }
 .profile-btm ul li h4 {
     font-size: 1.3em;
-    color:#4F52BA;
+    color: #FFC0CB;
     font-weight: 900;
 }
 .profile-btm ul li h5 {
@@ -2395,7 +2395,7 @@ i.fa.fa-facebook.profile-icon {
 }
 .header-top li p.cen {
     background: #FFFFFF;
-    color:#4F52BA;
+    color: #FFC0CB;
     border-radius: 0 3px 3px 0;
 }
 .whe {
@@ -2426,7 +2426,7 @@ i.fa.fa-facebook.profile-icon {
     border-right: none;
 }
 .header-head h4 {
-    color:#4F52BA;
+    color: #FFC0CB;
     font-size: 1.1em;
     margin-bottom: 1em;
 }
@@ -2482,7 +2482,7 @@ i.fa.fa-facebook.profile-icon {
 	text-align:center;
 }
 .widget_1_box .bg-info {
-    background-color:#4F52BA;
+    background-color: #FFC0CB;
 }
 .widget_1_box .bg-success {
     background-color: #F2B33F;
@@ -2509,7 +2509,7 @@ i.fa.fa-facebook.profile-icon {
     background: #EB621F;
 }
 .widget_1_box .progress-striped .orange {
-    background:#4F52BA;
+    background: #FFC0CB;
 }
 .widget_1_box .progress-striped .bar {
     background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(0.25, rgba(255, 255, 255, 0.15)), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, rgba(255, 255, 255, 0.15)), color-stop(0.75, rgba(255, 255, 255, 0.15)), color-stop(0.75, transparent), to(transparent));

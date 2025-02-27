@@ -2,10 +2,10 @@
 -- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Generation Time: Sep 10, 2025 at 08:59 AM
--- Server version: 10.4.32-MariaDB
--- PHP Version: 8.2.12
+-- Host: localhost
+-- Generation Time: Feb 27, 2025 at 02:38 AM
+-- Server version: 10.4.28-MariaDB
+-- PHP Version: 8.2.4
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `bpms`
+-- Database: `bpmsdb`
 --
 
 -- --------------------------------------------------------
@@ -42,7 +42,7 @@ CREATE TABLE `tbladmin` (
 --
 
 INSERT INTO `tbladmin` (`ID`, `AdminName`, `UserName`, `MobileNumber`, `Email`, `Password`, `AdminRegdate`) VALUES
-(1, 'Admin', 'admin', 7898799798, 'tester1@gmail.com', 'f925916e2754e5e03f75dd58a5733251', '2025-02-25 06:21:50');
+(2, 'Suara', 'suara', 9810837339, 'suara@gmail.com', '14d05bf073bda8dbed394ab23bd59286', '2025-02-27 00:53:03');
 
 -- --------------------------------------------------------
 
@@ -68,7 +68,8 @@ CREATE TABLE `tblbook` (
 --
 
 INSERT INTO `tblbook` (`ID`, `UserID`, `AptNumber`, `AptDate`, `AptTime`, `Message`, `BookingDate`, `Remark`, `Status`, `RemarkDate`) VALUES
-(10, 1, 226906690, '2024-09-20', '17:30:00', 'Need appointment for bridal makeup.', '2024-09-05 06:52:30', 'Approved', 'Selected', '2024-09-05 09:33:48');
+(11, 2, 593960758, '2025-02-27', '11:30:00', 'Manicure', '2025-02-25 15:48:54', 'oki', 'Selected', '2025-02-25 15:51:27'),
+(12, 3, 453488100, '2025-03-01', '10:00:00', 'nails for two people', '2025-02-27 01:06:25', 'be there on time', 'Selected', '2025-02-27 01:06:57');
 
 -- --------------------------------------------------------
 
@@ -100,14 +101,6 @@ CREATE TABLE `tblinvoice` (
   `BillingId` int(11) DEFAULT NULL,
   `PostingDate` timestamp NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
-
---
--- Dumping data for table `tblinvoice`
---
-
-INSERT INTO `tblinvoice` (`id`, `Userid`, `ServiceId`, `BillingId`, `PostingDate`) VALUES
-(1, 1, 1, 193862954, '2024-09-05 09:34:08'),
-(2, 1, 6, 193862954, '2024-09-05 09:34:08');
 
 -- --------------------------------------------------------
 
@@ -154,19 +147,9 @@ CREATE TABLE `tblservices` (
 --
 
 INSERT INTO `tblservices` (`ID`, `ServiceName`, `ServiceDescription`, `Cost`, `Image`, `CreationDate`) VALUES
-(1, 'O3 Facial', 'O3 FacialO3 FacialO3 FacialO3 FacialO3 FacialO3 FacialO3 FacialO3 FacialO3 FacialO3 FacialO3 FacialO3 FacialO3 FacialO3 FacialO3 FacialO3 FacialO3 FacialO3 FacialO3 FacialO3 Facial', 1200, 'o3plus-professional-bridal-facial-kit-for-radiant-glowing-skin.jpg', '2024-05-09 22:37:38'),
-(2, 'Fruit Facial', 'Fruit facials contain certain fruit acid like glycolic acid, alpha hydroxyl acid, citric acid, phenolic acid, vitamins and minerals in it. These acids are antiblemish, antiwrinkle and help your skin to exfoliate, it highly detoxifies your skin, it excretes out all the toxins and it hydrates your face', 500, 'How-To-Do-Fruit-Facial-At-Home.jpg', '2024-05-09 22:37:38'),
-(3, 'Charcol Facial', 'Activated charcoal is created from bone char, coconut shells, peat, petroleum coke, coal, olive pits, bamboo, or sawdust. It is in the form of a fine black dust that is produced when regular charcoal is activated by exposing it to very high temperatures. This is done to alter its internal structure and increase its surface area to increase absorbability. The charcoal that you get after it has undergone this process is very porous.', 1000, 'b9fb9d37bdf15a699bc071ce49baea531652852364.jpg', '2024-05-09 22:37:38'),
-(4, 'Deluxe Menicure', 'A luxurious treatment including a soak and moisturizing exfoliation, cuticle work, nails clipped and filed, hard skin is removed (pedicure) and a renewing mask is applied. A short massage and your nails are buffed and ready to paint.', 500, 'efc1a80c391be252d7d777a437f868701652852477.jpg', '2024-05-09 22:37:38'),
-(5, 'Deluxe Pedicure', 'A luxurious treatment including a soak and moisturizing exfoliation, cuticle work, nails clipped and filed, hard skin is removed (pedicure) and a renewing mask is applied. A short massage and your nails are buffed and ready to paint.', 600, '1e6ae4ada992769567b71815f124fac51652852492.jpg', '2024-05-09 22:37:38'),
-(6, 'Normal Menicure', 'A luxurious treatment including a soak and moisturizing exfoliation, cuticle work, nails clipped and filed, hard skin is removed (pedicure) and a renewing mask is applied. A short massage and your nails are buffed and ready to paint.', 300, 'The-Dummys-Guide-To-Using-A-Manicure-Kit_OI.jpg', '2024-05-09 22:37:38'),
-(7, 'Normal Pedicure', 'A luxurious treatment including a soak and moisturizing exfoliation, cuticle work, nails clipped and filed, hard skin is removed (pedicure) and a renewing mask is applied. A short massage and your nails are buffed and ready to paint.', 400, '1e6ae4ada992769567b71815f124fac51652852492.jpg', '2024-05-09 22:37:38'),
-(8, 'U-Shape Hair Cut', 'U-Shape Hair Cut', 250, 'cff8ad28cf40ebf4fbdd383fe546098d1652852593.jpg', '2024-05-09 22:37:38'),
-(9, 'Layer Haircut', 'Layer Haircut', 550, '74375080377499ab76dad37484ee7f151652852649.jpg', '2024-05-09 22:37:38'),
-(10, 'Rebonding', 'Hair rebonding is a chemical process that changes your hair\'s natural texture and creates a smooth, straight style. It\'s also called chemical straightening. Hair rebonding is typically performed by a licensed cosmetologist at your local hair salon.', 3999, 'c362f21370120580f5779a2d019392851652852555.jpg', '2024-05-09 22:37:38'),
-(11, 'Loreal Hair Color(Full)', 'Loreal Hair Color(Full),Loreal Hair Color(Full),Loreal Hair Color(Full)', 1200, 'images.jpg', '2024-05-09 22:37:38'),
-(12, 'Body Spa', 'It is typically a massage spa therapy that helps reduce pain. The technique involves using fingertips, palm, elbow, or even feet to apply firm pressure on certain body parts or acupoint to encourage blood flow and promote healing', 1500, 'efc1a80c391be252d7d777a437f868701652852477.jpg', '2024-05-09 22:37:38'),
-(16, 'Aroma Oil Massage Therapy', 'Aroma Oil Massage TherapyAroma Oil Massage TherapyAroma Oil Massage TherapyAroma Oil Massage TherapyAroma Oil Massage', 700, '032b2cc936860b03048302d991c3498f1652173213.jpg', '2024-05-09 22:37:38');
+(20, 'Manicure', 'Nail Art', 6000, 'd0096ec6c83575373e3a21d129ff8fef1740497552.jpg', '2025-02-25 15:32:32'),
+(21, 'Hair Styling', 'Haircut, Hairstyling, Hair Treatment', 1400, '18e2999891374a475d0687ca9f989d831740617363.jpg', '2025-02-27 00:49:23'),
+(22, 'Pedicure', 'Massage, Nail Art', 7000, 'd0096ec6c83575373e3a21d129ff8fef1740617514.jpg', '2025-02-27 00:51:54');
 
 -- --------------------------------------------------------
 
@@ -189,7 +172,8 @@ CREATE TABLE `tbluser` (
 --
 
 INSERT INTO `tbluser` (`ID`, `FirstName`, `LastName`, `MobileNumber`, `Email`, `Password`, `RegDate`) VALUES
-(1, 'John', 'Doe', 1414253612, 'johndoe@gmail.com', 'f925916e2754e5e03f75dd58a5733251', '2024-09-05 06:46:36');
+(2, 'Aradhana', 'Rijal', 9809799605, 'rijalaradhana@gmail.com', '36d4c2fbbeb38231b23e4b0164c4ffc2', '2025-02-25 15:42:54'),
+(3, 'Sujita', 'Shrestha', 9810809090, 'sujita@gmail.com', 'f06ae624422956781de8b60ae51568ed', '2025-02-27 01:04:44');
 
 --
 -- Indexes for dumped tables
@@ -247,13 +231,13 @@ ALTER TABLE `tbluser`
 -- AUTO_INCREMENT for table `tbladmin`
 --
 ALTER TABLE `tbladmin`
-  MODIFY `ID` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `ID` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `tblbook`
 --
 ALTER TABLE `tblbook`
-  MODIFY `ID` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `ID` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT for table `tblcontact`
@@ -277,13 +261,13 @@ ALTER TABLE `tblpage`
 -- AUTO_INCREMENT for table `tblservices`
 --
 ALTER TABLE `tblservices`
-  MODIFY `ID` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `ID` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
 
 --
 -- AUTO_INCREMENT for table `tbluser`
 --
 ALTER TABLE `tbluser`
-  MODIFY `ID` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `ID` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
