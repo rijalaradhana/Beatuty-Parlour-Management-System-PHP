@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Feb 27, 2025 at 01:55 AM
+-- Generation Time: Feb 27, 2025 at 02:38 AM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -68,7 +68,8 @@ CREATE TABLE `tblbook` (
 --
 
 INSERT INTO `tblbook` (`ID`, `UserID`, `AptNumber`, `AptDate`, `AptTime`, `Message`, `BookingDate`, `Remark`, `Status`, `RemarkDate`) VALUES
-(11, 2, 593960758, '2025-02-27', '11:30:00', 'Manicure', '2025-02-25 15:48:54', 'oki', 'Selected', '2025-02-25 15:51:27');
+(11, 2, 593960758, '2025-02-27', '11:30:00', 'Manicure', '2025-02-25 15:48:54', 'oki', 'Selected', '2025-02-25 15:51:27'),
+(12, 3, 453488100, '2025-03-01', '10:00:00', 'nails for two people', '2025-02-27 01:06:25', 'be there on time', 'Selected', '2025-02-27 01:06:57');
 
 -- --------------------------------------------------------
 
@@ -171,8 +172,8 @@ CREATE TABLE `tbluser` (
 --
 
 INSERT INTO `tbluser` (`ID`, `FirstName`, `LastName`, `MobileNumber`, `Email`, `Password`, `RegDate`) VALUES
-(1, 'John', 'Doe', 1414253612, 'johndoe@gmail.com', 'f925916e2754e5e03f75dd58a5733251', '2024-09-05 06:46:36'),
-(2, 'Aradhana', 'Rijal', 9809799605, 'rijalaradhana@gmail.com', '36d4c2fbbeb38231b23e4b0164c4ffc2', '2025-02-25 15:42:54');
+(2, 'Aradhana', 'Rijal', 9809799605, 'rijalaradhana@gmail.com', '36d4c2fbbeb38231b23e4b0164c4ffc2', '2025-02-25 15:42:54'),
+(3, 'Sujita', 'Shrestha', 9810809090, 'sujita@gmail.com', 'f06ae624422956781de8b60ae51568ed', '2025-02-27 01:04:44');
 
 --
 -- Indexes for dumped tables
@@ -236,7 +237,7 @@ ALTER TABLE `tbladmin`
 -- AUTO_INCREMENT for table `tblbook`
 --
 ALTER TABLE `tblbook`
-  MODIFY `ID` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `ID` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT for table `tblcontact`
@@ -266,7 +267,7 @@ ALTER TABLE `tblservices`
 -- AUTO_INCREMENT for table `tbluser`
 --
 ALTER TABLE `tbluser`
-  MODIFY `ID` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `ID` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
