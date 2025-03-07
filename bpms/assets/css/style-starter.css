@@ -2689,9 +2689,9 @@
     -ms-background-size: cover;
     transition: left 0s .75s ease-in-out; }
   .w3l-hero-headers-9 .slide-one {
-    background-image: url("../images/1.jpg"); }
+    background-image: url("../images/home1.jpg"); }
   .w3l-hero-headers-9 .slide-two {
-    background-image: url("../images/2.jpg"); }
+    background-image: url("../images/home2.jpg"); }
   .w3l-hero-headers-9 .slide, .w3l-hero-headers-9 .css-slider {
     height: 700px; }
   .w3l-hero-headers-9 .slide:before {
