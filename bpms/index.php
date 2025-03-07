@@ -113,7 +113,7 @@ $(function () {
         <div class="container">
             <div class=" row">
                 <div class="col-lg-6 back-image">
-                    <img src="assets/images/b1.jpg" alt="product" class="img-responsive ">
+                    <img src="assets/images/labeau.jpg" alt="product" class="img-responsive ">
                 </div>
                 <div class="col-lg-6 about-right-faq align-self">
                     <h3 class="title-big"><a href="about.html">Clean and Recommended Hair Salon</a></h3>
