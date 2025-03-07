@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Feb 27, 2025 at 02:38 AM
+-- Generation Time: Mar 07, 2025 at 08:08 AM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -69,7 +69,9 @@ CREATE TABLE `tblbook` (
 
 INSERT INTO `tblbook` (`ID`, `UserID`, `AptNumber`, `AptDate`, `AptTime`, `Message`, `BookingDate`, `Remark`, `Status`, `RemarkDate`) VALUES
 (11, 2, 593960758, '2025-02-27', '11:30:00', 'Manicure', '2025-02-25 15:48:54', 'oki', 'Selected', '2025-02-25 15:51:27'),
-(12, 3, 453488100, '2025-03-01', '10:00:00', 'nails for two people', '2025-02-27 01:06:25', 'be there on time', 'Selected', '2025-02-27 01:06:57');
+(12, 3, 453488100, '2025-03-01', '10:00:00', 'nails for two people', '2025-02-27 01:06:25', 'be there on time', 'Selected', '2025-02-27 01:06:57'),
+(13, 4, 873492074, '2025-03-04', '08:00:00', 'nails, haircut, facial', '2025-03-01 06:33:53', 'be there on time', 'Selected', '2025-03-01 06:35:16'),
+(15, 4, 524745840, '2025-03-08', '12:44:00', 'hbh', '2025-03-07 06:59:58', NULL, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -124,8 +126,8 @@ CREATE TABLE `tblpage` (
 --
 
 INSERT INTO `tblpage` (`ID`, `PageType`, `PageTitle`, `PageDescription`, `Email`, `MobileNumber`, `UpdationDate`, `Timing`) VALUES
-(1, 'aboutus', 'About Us', '        Our main focus is on quality and hygiene. Our Parlour is well equipped with advanced technology equipments and provides best quality services. Our staff is well trained and experienced, offering advanced services in Skin, Hair and Body Shaping that will provide you with a luxurious experience that leave you feeling relaxed and stress free. The specialities in the parlour are, apart from regular bleachings and Facials, many types of hairstyles, Bridal and cine make-up and different types of Facials &amp; fashion hair colourings.', NULL, NULL, NULL, ''),
-(2, 'contactus', 'Contact Us', '890,Sector 62, Gyan Sarovar, GAIL Noida(Delhi/NCR)', 'info@gmail.com', 7896541236, NULL, '10:30 am to 7:30 pm');
+(1, 'aboutus', 'About Us', '                Our main focus is on quality and hygiene. Our Parlour is well equipped with advanced technology equipments and provides best quality services. Our staff is well trained and experienced, offering advanced services in Skin, Hair and Body Shaping that will provide you with a luxurious experience that leave you feeling relaxed and stress free. The specialities in the parlour are, apart from regular bleachings and Facials, many types of hairstyles, Bridal and cine make-up and different types of Facials &amp; fashion hair colourings.', NULL, NULL, NULL, ''),
+(2, 'contactus', 'Contact Us', 'Suruchi Marga, New Baneshwor, Kathmandu', 'labeau@gmail.com', 9779810837339, NULL, '8:00AM-7:00PM');
 
 -- --------------------------------------------------------
 
@@ -173,7 +175,8 @@ CREATE TABLE `tbluser` (
 
 INSERT INTO `tbluser` (`ID`, `FirstName`, `LastName`, `MobileNumber`, `Email`, `Password`, `RegDate`) VALUES
 (2, 'Aradhana', 'Rijal', 9809799605, 'rijalaradhana@gmail.com', '36d4c2fbbeb38231b23e4b0164c4ffc2', '2025-02-25 15:42:54'),
-(3, 'Sujita', 'Shrestha', 9810809090, 'sujita@gmail.com', 'f06ae624422956781de8b60ae51568ed', '2025-02-27 01:04:44');
+(3, 'Sujita', 'Shrestha', 9810809090, 'sujita@gmail.com', 'f06ae624422956781de8b60ae51568ed', '2025-02-27 01:04:44'),
+(4, 'Sanjay ', 'Maharjan ', 9841146236, 'sanjay@gmail.com', '54a8c7aa7fa0088b2a0acb6d4a951165', '2025-03-01 06:31:42');
 
 --
 -- Indexes for dumped tables
@@ -237,7 +240,7 @@ ALTER TABLE `tbladmin`
 -- AUTO_INCREMENT for table `tblbook`
 --
 ALTER TABLE `tblbook`
-  MODIFY `ID` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `ID` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- AUTO_INCREMENT for table `tblcontact`
@@ -261,13 +264,13 @@ ALTER TABLE `tblpage`
 -- AUTO_INCREMENT for table `tblservices`
 --
 ALTER TABLE `tblservices`
-  MODIFY `ID` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
+  MODIFY `ID` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
 
 --
 -- AUTO_INCREMENT for table `tbluser`
 --
 ALTER TABLE `tbluser`
-  MODIFY `ID` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `ID` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

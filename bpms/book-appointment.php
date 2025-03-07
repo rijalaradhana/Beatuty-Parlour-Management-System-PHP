@@ -143,10 +143,29 @@ while ($row=mysqli_fetch_array($ret)) {
                             
                             <input type="date" class="form-control appointment_date" placeholder="Date" name="adate" id='adate' required="true"></div>
                         <div style="padding-top: 30px;">
-                            <label>Appointment Time</label>
-                            
-                            <input type="time" class="form-control appointment_time" placeholder="Time" name="atime" id='atime' required="true"></div>
+                        <label>Appointment Time</label>
+    <input type="time" class="form-control appointment_time" name="atime" id="atime" required min="08:00" max="19:00">
 
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {  // Ensures DOM is loaded before script runs
+            document.getElementById('atime').addEventListener('change', function () {
+                let inputTime = this.value; // Get selected time (HH:MM)
+
+                if (!inputTime) return; // If no time is selected, exit
+
+                let [hours, minutes] = inputTime.split(':').map(Number); // Extract hours & minutes
+                let selectedTime = hours * 60 + minutes; // Convert to minutes for comparison
+
+                let minTime = 8 * 60;  // 8:00 AM in minutes
+                let maxTime = 19 * 60; // 7:00 PM in minutes
+
+                if (selectedTime < minTime || selectedTime > maxTime) {
+                    alert("Please select a time between 08:00 AM and 07:00 PM.");
+                    this.value = ""; // Reset the input field
+                }
+            });
+        });
+    </script>
                         <div style="padding-top: 30px;">
                         <textarea class="form-control" id="message" name="message" placeholder="Message" required=""></textarea></div>
                         <button type="submit" class="btn btn-contact" name="submit">Make an Appointment</button>
