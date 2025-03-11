@@ -67,7 +67,6 @@ $(function () {
                 
  Profile
             </h3>
-            <p class="tiltle-para ">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Hic fuga sit illo modi aut aspernatur tempore laboriosam saepe dolores eveniet.</p>
         </div>
 </div>
 </div>
