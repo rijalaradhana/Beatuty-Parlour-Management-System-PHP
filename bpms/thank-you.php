@@ -32,7 +32,7 @@ if (strlen($_SESSION['bpmsuid']==0)) {
 <!-- disable body scroll which navbar is in active -->
 <script>
 $(function () {
-  $('.navbar-toggler').click(function () {
+  $('.navbar-toggler').click(function () { 
     $('body').toggleClass('noscroll');
   })
 });
