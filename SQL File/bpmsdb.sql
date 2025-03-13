@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Mar 07, 2025 at 08:08 AM
+-- Generation Time: Mar 13, 2025 at 09:18 AM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -42,7 +42,7 @@ CREATE TABLE `tbladmin` (
 --
 
 INSERT INTO `tbladmin` (`ID`, `AdminName`, `UserName`, `MobileNumber`, `Email`, `Password`, `AdminRegdate`) VALUES
-(2, 'Suara', 'suara', 9810837339, 'suara@gmail.com', '14d05bf073bda8dbed394ab23bd59286', '2025-02-27 00:53:03');
+(1, 'Suara', 'suara', 9810837339, 'suara@gmail.com', '14d05bf073bda8dbed394ab23bd59286', '2025-02-27 00:53:03');
 
 -- --------------------------------------------------------
 
@@ -68,10 +68,7 @@ CREATE TABLE `tblbook` (
 --
 
 INSERT INTO `tblbook` (`ID`, `UserID`, `AptNumber`, `AptDate`, `AptTime`, `Message`, `BookingDate`, `Remark`, `Status`, `RemarkDate`) VALUES
-(11, 2, 593960758, '2025-02-27', '11:30:00', 'Manicure', '2025-02-25 15:48:54', 'oki', 'Selected', '2025-02-25 15:51:27'),
-(12, 3, 453488100, '2025-03-01', '10:00:00', 'nails for two people', '2025-02-27 01:06:25', 'be there on time', 'Selected', '2025-02-27 01:06:57'),
-(13, 4, 873492074, '2025-03-04', '08:00:00', 'nails, haircut, facial', '2025-03-01 06:33:53', 'be there on time', 'Selected', '2025-03-01 06:35:16'),
-(15, 4, 524745840, '2025-03-08', '12:44:00', 'hbh', '2025-03-07 06:59:58', NULL, NULL, NULL);
+(17, 8, 805713180, '2025-03-14', '16:00:00', 'Haircut for 2 people', '2025-03-13 08:17:59', NULL, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -127,7 +124,7 @@ CREATE TABLE `tblpage` (
 
 INSERT INTO `tblpage` (`ID`, `PageType`, `PageTitle`, `PageDescription`, `Email`, `MobileNumber`, `UpdationDate`, `Timing`) VALUES
 (1, 'aboutus', 'About Us', '                Our main focus is on quality and hygiene. Our Parlour is well equipped with advanced technology equipments and provides best quality services. Our staff is well trained and experienced, offering advanced services in Skin, Hair and Body Shaping that will provide you with a luxurious experience that leave you feeling relaxed and stress free. The specialities in the parlour are, apart from regular bleachings and Facials, many types of hairstyles, Bridal and cine make-up and different types of Facials &amp; fashion hair colourings.', NULL, NULL, NULL, ''),
-(2, 'contactus', 'Contact Us', 'Suruchi Marga, New Baneshwor, Kathmandu', 'labeau@gmail.com', 9779810837339, NULL, '8:00AM-7:00PM');
+(2, 'contactus', 'Contact Us', '                Suruchi Marga, New Baneshwor, Kathmandu', 'labeau@gmail.com', 9779810837339, NULL, '8:00AM-7:00PM');
 
 -- --------------------------------------------------------
 
@@ -149,9 +146,9 @@ CREATE TABLE `tblservices` (
 --
 
 INSERT INTO `tblservices` (`ID`, `ServiceName`, `ServiceDescription`, `Cost`, `Image`, `CreationDate`) VALUES
-(20, 'Manicure', 'Nail Art', 6000, 'd0096ec6c83575373e3a21d129ff8fef1740497552.jpg', '2025-02-25 15:32:32'),
-(21, 'Hair Styling', 'Haircut, Hairstyling, Hair Treatment', 1400, '18e2999891374a475d0687ca9f989d831740617363.jpg', '2025-02-27 00:49:23'),
-(22, 'Pedicure', 'Massage, Nail Art', 7000, 'd0096ec6c83575373e3a21d129ff8fef1740617514.jpg', '2025-02-27 00:51:54');
+(1, 'Manicure', 'Nail Art', 6000, 'd0096ec6c83575373e3a21d129ff8fef1740497552.jpg', '2025-02-25 15:32:32'),
+(2, 'Hair Styling', 'Haircut, Hairstyling, Hair Treatment', 1400, '18e2999891374a475d0687ca9f989d831740617363.jpg', '2025-02-27 00:49:23'),
+(3, 'Pedicure', 'Massage, Nail Art', 7000, 'd0096ec6c83575373e3a21d129ff8fef1740617514.jpg', '2025-02-27 00:51:54');
 
 -- --------------------------------------------------------
 
@@ -174,9 +171,7 @@ CREATE TABLE `tbluser` (
 --
 
 INSERT INTO `tbluser` (`ID`, `FirstName`, `LastName`, `MobileNumber`, `Email`, `Password`, `RegDate`) VALUES
-(2, 'Aradhana', 'Rijal', 9809799605, 'rijalaradhana@gmail.com', '36d4c2fbbeb38231b23e4b0164c4ffc2', '2025-02-25 15:42:54'),
-(3, 'Sujita', 'Shrestha', 9810809090, 'sujita@gmail.com', 'f06ae624422956781de8b60ae51568ed', '2025-02-27 01:04:44'),
-(4, 'Sanjay ', 'Maharjan ', 9841146236, 'sanjay@gmail.com', '54a8c7aa7fa0088b2a0acb6d4a951165', '2025-03-01 06:31:42');
+(8, 'Aradhana', 'Rijal', 9809799605, 'rijalaradhana@gmail.com', 'f2c8d37ce09645bca49257f0cbdd863a', '2025-03-13 08:16:45');
 
 --
 -- Indexes for dumped tables
@@ -240,7 +235,7 @@ ALTER TABLE `tbladmin`
 -- AUTO_INCREMENT for table `tblbook`
 --
 ALTER TABLE `tblbook`
-  MODIFY `ID` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `ID` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
 -- AUTO_INCREMENT for table `tblcontact`
@@ -264,13 +259,13 @@ ALTER TABLE `tblpage`
 -- AUTO_INCREMENT for table `tblservices`
 --
 ALTER TABLE `tblservices`
-  MODIFY `ID` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
+  MODIFY `ID` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
 
 --
 -- AUTO_INCREMENT for table `tbluser`
 --
 ALTER TABLE `tbluser`
-  MODIFY `ID` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `ID` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
