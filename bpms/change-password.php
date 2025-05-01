@@ -115,7 +115,7 @@ if (strlen($_SESSION['bpmsuid'] == 0)) {
                                     </div>
                                     <div class="cont-right">
                                         <h6>Call Us</h6>
-                                        <p class="para"><a href="tel:+44 99 555 42">+<?php echo $row['MobileNumber']; ?></a></p>
+                                        <p class="para"><a href="tel:+9779810837339">+<?php echo $row['MobileNumber']; ?></a></p>
                                     </div>
                                 </div>
                                 <div class="cont-top margin-up">

@@ -40,7 +40,7 @@
                     </li><?php }?>
                     <?php if (strlen($_SESSION['bpmsuid']>0)) {?>
                     <li class="nav-item">
-                        <a class="nav-link" href="book-appointment.php">Book Salon</a>
+                        <a class="nav-link" href="book-appointment.php">Book Parlour</a>
                     </li>
                     
                     <li class="nav-item">

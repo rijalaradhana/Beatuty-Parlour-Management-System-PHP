@@ -75,7 +75,7 @@ if (strlen($_SESSION['bpmsaid'] == 0)) {
 										<th>#</th>
 										<th>Service Name</th>
 										<th>Service Price</th>
-										<th>Service Image</th>
+										
 										<th>Creation Date</th>
 										<th>Action</th>
 									</tr>
@@ -92,10 +92,7 @@ if (strlen($_SESSION['bpmsaid'] == 0)) {
 											<th scope="row"><?php echo $cnt; ?></th>
 											<td><?php echo $row['ServiceName']; ?></td>
 											<td><?php echo $row['Cost']; ?></td>
-											<td>
-												<img src="images/<?php echo htmlentities($row['Image']); ?>" width="100"
-													height="100">
-											</td>
+											
 											<td><?php echo $row['CreationDate']; ?></td>
 											<td>
 												<a href="edit-services.php?editid=<?php echo $row['ID']; ?>"
