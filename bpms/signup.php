@@ -205,9 +205,17 @@ if (isset($_POST['submit'])) {
                             <div style="padding-top: 30px;">
                                 <label>Mobile Number</label>
                                 <input type="number" id="mobilenumber" class="form-control" placeholder="Mobile Number"
-                                    name="mobilenumber" maxlength="10" required>
+                                    name="mobilenumber" required oninput="validateMobileNumber(this)">
                                 <span id="error-message" style="color: red; display: none;">Mobile number must be
                                     exactly 10 digits</span>
+
+                                <script>
+                                    function validateMobileNumber(input) {
+                                        if (input.value.length > 10) {
+                                            input.value = input.value.slice(0, 10);
+                                        }
+                                    }
+                                </script>
                             </div>
 
                             <script>
@@ -270,6 +278,7 @@ if (isset($_POST['submit'])) {
                                     character (@$!%*?&).</small>
                             </div>
 
+
                             <script>
                                 document.getElementById("password").addEventListener("input", function () {
                                     let password = this.value;
@@ -279,12 +288,14 @@ if (isset($_POST['submit'])) {
                                     let passwordPattern = /^(?=.*\d)(?=.*[A-Z])(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,20}$/;
 
                                     if (passwordPattern.test(password)) {
-                                        this.style.border = "2px solid green"; // Show success border
-                                        errorMessage.style.display = "none"; // Hide error message
+                                        this.style.border = "2px solid green";
+                                        errorMessage.style.display = "none";
                                     } else {
-                                        this.style.border = "2px solid red"; // Show error border
-                                        errorMessage.style.display = "block"; // Show error message
+                                        this.style.border = "2px solid red";
+                                        errorMessage.style.display = "block";
                                     }
+
+                                    document.getElementById("submit-btn").disabled = !passwordPattern.test(password);
                                 });
                             </script>
                             <!-- password ends here -->
@@ -295,7 +306,7 @@ if (isset($_POST['submit'])) {
                                     placeholder="Repeat password" required="true">
                             </div>
 
-                            <button type="submit" class="btn btn-contact" name="submit">Signup</button>
+                            <button type="submit" id="submit-btn" disabled class="btn btn-contact" name="submit">Signup</button>
                         </form>
                     </div>
                 </div>

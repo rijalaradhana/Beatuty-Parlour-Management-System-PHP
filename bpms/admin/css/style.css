@@ -95,7 +95,7 @@ button#showLeftPush:hover {
     height: 100%;
     top: 76px;
     z-index: 1000;
-    background-color:#4F52BA;
+    background-color:#d63384;
 	padding: 2em 0;
 }
 .cbp-spmenu-left {
@@ -210,7 +210,7 @@ ul.dropdown-menu{
 /*--//side-menu--*/
 /* ----Logo----*/
 .logo {
-    background: #FFC0CB;
+    background: #D81B60;
     text-align: center;
     float: left;
 }
@@ -248,23 +248,23 @@ ul.dropdown-menu{
     margin: 0;
     z-index: 10;
     font-size: 0.9em;
-    color: #FFC0CB;
+    color: #D81B60;
     padding: 0.5em 1em;
 	border: 2px solid rgba(79, 82, 186, 0.3);
 	-webkit-appearance: none; /* for box shadows to show on iOS */
 	font-family: 'Roboto Condensed', sans-serif;
 }
 .sb-search-input::-webkit-input-placeholder {
-	color:#FFC0CB;
+	color:#D81B60;
 }
 .sb-search-input:-moz-placeholder {
-	color: #FFC0CB;
+	color: #D81B60;
 }
 .sb-search-input::-moz-placeholder {
-	color: #FFC0CB;
+	color: #D81B60;
 }
 .sb-search-input:-ms-input-placeholder {
-	color: #FFC0CB;
+	color: #D81B60;
 }
 .input__label {
 	-webkit-font-smoothing: antialiased;
@@ -497,7 +497,7 @@ i.fa.fa-tasks{
 	 font-size: 1em;
 }
 .notification_bottom a:hover {
-    color:#FFC0CB;
+    color:#D81B60;
 }
 .notification_bottom h3 a{	
 	color: #717171;
@@ -658,7 +658,7 @@ i.icon_6{
 	background:#5cb85c;
 } 
 .progress-striped .light-blue{
-	background:#4F52BA;
+	background:#d63384;
 } 
 .progress-striped .red{
 	background:#d9534f;
@@ -774,7 +774,7 @@ ul.dropdown-menu {
     position: absolute;
     top: 34%;
     right: 8%;
-    color: #4F52BA;
+    color: #d63384;
     font-size: 1.6em;
 }
 .profile_details ul li ul.dropdown-menu.drp-mnu {
@@ -789,7 +789,7 @@ ul.dropdown-menu.drp-mnu li {
 }
 .user-name p{
 	font-size:1em;
-	color:#DD6777;
+	color:#d63384;
 	line-height:1em;
 	font-weight:700;
 }
@@ -837,7 +837,7 @@ ul.dropdown-menu.drp-mnu li {
 .stats-left {
     float: left;
     width: 70%;
-    background-color: #4F52BA;
+    background-color: #d63384;
 	text-align: center;
 	padding: 1em;
 }
@@ -858,7 +858,7 @@ ul.dropdown-menu.drp-mnu li {
     width: 30%;
     text-align: center;
 	padding: 1.54em 1em;
-	background-color: rgba(79, 82, 186, 0.88);
+	background-color: #d63384;
 }
 .stats-left h5 {
     color: #fff;
@@ -940,7 +940,7 @@ h4.title {
     font-weight: 500;
 }
 .stats-table h5 {
-    color: #4F52BA;
+    color: #d63384;
     font-size: 0.9em;
 }
 .stats-table h5.down {
@@ -1188,7 +1188,7 @@ h3.hdg {
 }
 .grid_5 h3, .grid_5 h2, .grid_5 h1, .grid_5 h4, .grid_5 h5, h3.hdg {
 	margin-bottom:0.6em;
-	color: #4F52BA;
+	color: #d63384;
 }
 .pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus {
   z-index: 0;
@@ -1611,7 +1611,7 @@ button.note-color-btn {
     margin: 0.5em 0 0;
 }
 .login-page input[type="submit"]:hover{
-    background: #4F52BA;
+    background: #d63384;
 }
 .login-page-bottom {
     text-align: center;
@@ -1982,7 +1982,7 @@ h4.modal-title {
     transform: rotate(-45deg);
     height: .4rem;
     width: .8rem;
-    border-color: #4F52BA;
+    border-color: #d63384;
     border-top-style: none;
     border-right-style: none;
     border-width: 2px;
@@ -2017,7 +2017,7 @@ h4.modal-title {
     background: none;
     font-size: 1em;
     margin-top: 0.5em;
-    color: #4F52BA;
+    color: #d63384;
 	outline:none;
 	font-weight: 600;
 }
@@ -2143,7 +2143,7 @@ h4.modal-title {
 .compose-right input[type="submit"] {
     font-size: 0.9em;
     background-color: #FFC0CB;
-    border: 1px solid #4F52BA;
+    border: 1px solid #d63384;
     color: #fff;
     padding: 0.4em 1em;
     margin-top: 1em;
